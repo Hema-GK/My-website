@@ -1,0 +1,359 @@
+ body{
+  background-image:url("https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?cs=srgb&dl=pexels-bri-schneiter-28802-346529.jpg&fm=jpg");
+  /* background-repeat: no-repeat;  */
+  /* background-attachment: url("https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?cs=srgb&dl=pexels-bri-schneiter-28802-346529.jpg&fm=jpg"); */
+  /* px=pt,pc(but little bit bigger, pc is more bigger,1pc=12pt) */
+  
+
+background:linear-gradient(to bottom,rgb(93, 143, 197),rgba(204,229,255,0.4));
+font-size:18px; /*it changes with respect to parent size or element or standard size/ it doubles the value with respect to parent element ifwe given 2 */
+text-transform:capitalize;/*upper case, lower case and capitalize*/
+text-align:justify;/*justify, center*/
+font-size:1.15em;/*15% more than the standard font size,px sets all the headers and paragraphs as one size whereas em sets differnt for different size*/
+font-family:"arial",sans-serif;/*if present times other wise sans serif*, arial, times new roman, georgia*/
+
+}
+ 
+ img{
+  
+  align-content:center;
+}
+/*  */
+/* .title{
+  color:blue;
+} */
+#services{
+  color:green;
+}
+li:nth-child(2)
+{
+  color:steelblue;
+}
+/* li:only-child
+{
+  color:purple;
+} */
+td:only-child{
+  color:white;
+}
+/* #google-link:link
+{
+color:blue;
+}
+#google-link:visited
+{
+color:red;
+} */
+/*json sibler selector*/
+h2+a{
+  color:brown;
+}
+/*general sibling selector*/
+textarea~ button{
+  color:palevioletred;
+}
+/*all list items inside ul*,direct child selector*/
+ul>li{
+   color:rgba(25, 25, 148,0.4);/*alpha is a opacity or transparency of a color .0-> completely transparent , 1->visible, */ 
+}
+/*descendant relation*/
+ol li{
+  color:rgb(180, 79, 96);
+}
+ul ol li{
+  color:rgb(35, 2, 2)
+}
+/*Attribute selectors* , h2[attr=value]*/
+h2[class=title]{
+  color:chocolate;
+
+}
+/*img[src="$ or ^ or *=.../ , src attribute ends with this value*/
+img[src^="download.jpeg"]{
+  border:10px solid black;
+}
+h2[class~=article-title]{
+  color:rgb(20, 3, 62);
+  background:rgb(71, 220, 71);
+}
+h2[class|=article-title]{
+  color:rgb(20, 3, 62);
+  background:rgb(71, 220, 71);
+}
+h2:hover{
+  color:red;
+}
+/*PROPERTIES*,property:value/
+/*Rules*/ 
+/*Types of color*, color, hexa, rgb/
+/*coloring text*/
+#service-image{
+  height:400px;/*400vh = 4 times the total height of the  view port*/
+  width:70vw;/*equal to 70 times the 1% of the total view port */
+  /* background:url("https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_640.png"); */
+  background-size:cover;/*height,width*, cover or contain*/
+   /* background-repeat: no-repeat;  */
+/* background:linear-gradient(to right,rgb(94,255,126),rgba(94, 255, 126, 0)); */
+/* background:linear-gradient(146deg,rgb(94,255,126),rgba(94,255,126,0)); */
+background:radial-gradient(circle, red 20%, blue 40%, green 55%);/*small to large(percentages)*/
+  background-color:steelblue;
+  border:10px solid black;
+  padding:100px 40px 100px 40px;/*top,right, bottom,left*/
+
+  /* border:10px double black ;size, style,color*, dotted, dashed, solid, double
+   */
+   
+  
+}
+/*opacity and transparency*/
+/*Gradients*, transition between two colors*,radio and linear , radio->circular, they kind of move outwards from a center and depending upon the percentages and how much we use each color, linear-> a smooth red transition to blue, it can go left-right, top-bottom , and even diagonally*/
+
+/*TYPES OF UNITS*/
+/*Absolute units-> cm,m ,inches(these were dosen't depend on anything) and Relative units->dependent on something, % depends on parent element,we can resize our window*, px is an absolute unit but it is relatively scaled based on what we defines*,DPI is used to calculate the resolution of the screen , depending on px , resoution of the screen changes*/
+/*view width and view height, 1vw or 1vh= 1% of the total body width or body height, based on the total view port*/
+/*view port is greater than the body tag which is the parent element*/
+/*Font and text manipulation*/
+.link{
+  text-decoration:underline;/*none, underline,line-through,overline*/
+  float:right;
+  /*text transform property*/
+
+}
+/*Font size and bolding style*/
+h1{
+  font-weight:800;/*bolding, minimum for bolding is 100-800*/
+
+  /* font-style: italic;italisizes */
+}
+.italics{
+  font-style:normal;
+}
+/*font family-> collection of fonts which have similar features*, 3 main font families -> serif, sans-serif and monospace*/
+/*serif-> have small lines on the end of some letters, sans-serif->don't have the lines(much easier to read,monospace->all characters have same width, each character have same space*/
+/*including external fonts*/
+
+
+.foldit-{
+  font-family: "Foldit", sans-serif;/*backup font family is used if there is any crash happens in internet*/
+  font-optical-sizing: auto;
+  font-weight:3px;
+  font-style: normal;
+}
+/*LAYOUTS*/
+/*THE BOX MODEL*, used to position items on page and makes the website look better*/
+/*Padding(Internal space)-> space b/w the content and the border,  border->divider b/w the padding and margin (border:1px solid #ff00ff), margin(External space)->space b/w the border and all the contents*/
+/*changing content size* , using px or absolute units for height and % or vw or relative units for width*/
+#about-us-image{
+  height:300px;
+  width:60%;
+  border:6px solid rgb(28,28,79);
+  /* padding-right:40px;
+  padding-top:100px;
+  padding-bottom:100px;
+  padding-left:40px; */
+  /* margin:100px; */
+  /*using shorthand property*/
+  /* padding:100px 40px 100px 40px;top,right, bottom,left */
+  margin:80px 40px;/*top bottom*/
+  float:right;
+
+}
+/*CSS BORDERS*/
+/*Float and display(block(move them on to the new line  ) and inline(inline elements do not move anything on to their own line , they stay in their place , they don't touch anything or move anything around)) types*/
+.site-table{
+  display: inline-block;
+}
+/*if we have an element that has 4 or 5 lines deep , and we don't want to specify the float every time instead of the that us inherit in parent element once*/ 
+/*Flexbox*/
+/*It is a display type that comes with a range of properties allowing you to arrange items easily, it is an alternative to use displays , floats, and other layout properties*/
+/*NOT FLEXBOX: display:block; FLEXBOX:display:flex; NOT FLEXBOX:float:left; NOT FLEXBOX:float:right;*/
+/*A Flexbox element is split into two main parts: the container, and the items. The container is the parent element in which the display type is active. This is usually in the form of div. Flex items are child elements of the container, and make up the contents of the box*/  
+
+/*Creating a flex container*/
+/*Flex direction and wrap*/
+.container{
+background-color:rgb(250,250,250);margin:10px; 
+ /* width:justify; */
+ height:300px;
+display:flex;/*instead of arranging in a row all the elements are arranged accordingly i.e, one after the other */
+flex-direction:row;/*row(default) or column */
+/*flex-wrap:wrap;/*wrap or no wrap(default)*/
+justify-content: center;/*horizontal alignment*//*flex starts(where the container starts, in these case from left), flex ends(where it ends), center,space-b/w, space-around*/
+align-items:center;/*same properties such as previous,stretch, base line*/
+/*align-self:;/*It override the align-items property*/
+}
+.container-item{
+background:rgb(36,130,39);
+color:white;
+font-size:25px;
+text-align:center;
+/* height:300px;
+align-items:center; */
+
+
+width:70px;
+line-height:50px;
+margin:10px; 
+}
+/* Difference b/w rem and em and px and div*/
+/*Content alignment*/
+/*Flex item order*/
+/*Shrink,grow,basis of flexbox*/
+ /*flex basis defines the minimum width of an item or flex item*, it doesn't have to be a specific unit or number*/
+ /*flex row-> all flex items get same amount of space*, default value is 1 , if we specify anything for 4 items and if we specify for 5th element as 1 it will take up size of 5 which includes the size of all elements*/
+ /*flex shrink-> we know that base  of the minimum width is 100px *, if we don't want to shrink any item set its shrink to 0*/
+ /*Flex Property*,shorthand for above 3 flex properties : flex:grow shrink basis; flex 1 1 100px;*/
+ /*item alignment*/
+ /*we cant use strecth baseline on a line self , they dont work because they are container specific properties and they work of a values of a container */
+ /*Grid v/s Flexbox*/
+ /*Grid -> it is a display type that can be used to activate certain type that can be used to activate certain layout features on a container element*/
+ .grid-container{
+  margin:10px;
+  background-color: rgb(250,250,250);
+  height:500px;
+  align-items:stretch;/*flex end is not working*/
+  /* we are working with the container as a whole, not as/for items*/
+  
+  display:grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows:auto auto;
+  /* justify-content:space-around;
+  align-content: space-evenly; */
+/* grid-column-gap: 150px;
+grid-row-gap: 300px; */
+/*grid-gap:300px 150px;/*shorthand: row column*/
+  
+ }
+ .grid-item{
+  color:black;
+  font-size:25px;
+  /* align-items:flex-end; */
+  margin:10px;
+  line-height:40px;
+  width:70px;
+  text-align:center;
+ }
+ /*Grid-> template row and column*/
+ /*justify and align grid*/
+ /*Row and Column Gaps*/
+ /*column and row lines, based on start and end points*, to set it -> grid-column:startpoint/end point*(1/3),or 1/span 2->start at line 1 and at line 3*/
+ /*dont get the topic of grid row and column*/
+ /*Grid area*, shorthand for grid row and column, (row start /column start /row end/column end)*/
+ /*The Transition Property*/
+ .submit-button{
+  margin:20px 10px;
+  padding:10px 15px;
+  border:none;
+  text-decoration:none;
+  font-family: 'lato',sans-serif;
+  font-weight:600;
+  font-size:20px;
+  color:white;
+  background:rgb(89,150,255);
+  /* transform:translate(100px,10px); */
+ /* transform: scale(1);/* It works similar way to increasing padding would work,(decimal value)*/
+ /*rotation*(degreevalue)*/
+ /* transform:rotate(-90deg); */
+ /*Special transform properties are: skewx(degree value)->rotate along x axis, skewy(degree value)->rotate along y axis*/
+ /* transform:skewX(45deg);  */
+ /*transform:matrix(1, 0.45, 0.45, 1, 100,50);/*It takes 6 arguments*, it doesnt take rotation and only works with skews, (x scale,skew y and skew x, scale y, translate x and translate y*/
+  transition: background,padding 500ms  linear  ;/*duration s or ms* (time take to move from one property to other, pseudo transition style(ease,linear,ease-in-out),delay* or totally set to all to select all the properties*/
+  /*ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default) linear - specifies a transition effect with the same speed from start to end. ease-in - specifies a transition effect with a slow start. ease-out - specifies a transition effect with a slow end./
+  /* matrix function is the shorthand function for skew and not for rotate,*/
+ }
+ 
+ /* we use pseudo selectors to change the state of the submit button or change some properties in it*/
+ .submit-button:hover{
+  background: rgb(147,187,255);
+  color:black;
+   padding:20px 30px;}
+   #about-me{
+    /* animation-name: red-black; */
+    /*animation-duration:4s ;/*default value is 0s ,The animation-duration property defines how long an animation should take to complete one cycle.*/
+   /* animation-timing-function:ease;/*linear, ease-in*/
+/*animation-delay:2s ;/*both positive and negative, we need to 2s to wait for the animation to start, in negative it pretty much acting that animation is already 2s into the animation*/
+/*animation-iteration-count:infinite ;/*number of times our animation is going to iterate*/
+/*animation-direction: alternate-reverse;/*reverse, normal, alternate, alternate-reverse*/
+
+/*Using animation shorthand*/
+animation: red-black 4s linear 0s 2 alternate-reverse ;/*This takes 5 values->name,duration,timing-function(speed), delay, iteration-count, direction*/ 
+
+
+
+   }
+   @keyframes red-black {
+    /*writing keyframes*/
+    /*example/*keyword*/            
+    /* {
+      background:red;
+    } */
+    /*keyword, starting pointfrom{
+background: red;
+    }
+    To{
+background:black;
+    }*/
+    /* instead of above , use for using properties more than once here to use background two times use below percentages*/
+    0%/*start of animation*/{
+      background:red;
+      transform:translate(0px, 0px);
+    }
+    50%/*mid*/{
+      background:yellow;
+      transform:translate(10px, 10px);
+    }
+    100%/*end*/{
+      background:black;
+      transform:translate(50px,50px);
+    }
+
+
+
+
+   }
+   /*transform:translate(100px , 30px);/*physical changes, Y shift and X shift and it is going to physically shift the elements, (X Y), o/p is very fast but tidious, this property doesnt exist in this pseudo class*/
+ 
+ /*pseudo class over rides the base class*/
+ /*use browser support prefix for different browser, because some browsers wont accept some property prefixes*, example for chrome and safari use -webkit-transition,for firefox use -moz-, for opera use -o-*/
+ /*find other pseudo selectors that activates the submit button or any buttons*/
+ /*Transformation Functions*/
+ /*Transformation Functions*/
+ /*Skew->*/
+ /*Scale->*/
+ /*Matrix* , translation ->*/
+ /*creating animations(we can customize it, we can name them whatever we want and we can do anything inside it) , w/keyframes, each animations should have atleast two keyframes*/
+/*Animation properties->animation-duration-> allow our animation to run*/
+/*When translate property for z-axis is set, perspective property must also be set on parent element before we can see any effect:
+
+DIV1 {
+  perspective: 200px;
+}
+
+DIV2 {
+  translate: 50px 50px 50px;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
