@@ -1,0 +1,127 @@
+body{
+  background-color: rgb(213, 213, 213);
+}
+/* header {
+  background-color: rgb(75, 74, 74);
+  color: white;
+  height: 105px;
+  text-align: center;
+  padding-top:40px;
+}
+a {
+  color: white;
+  margin-left: 20PX;
+  padding-bottom: 30px;
+} */
+header{
+  background: #58614E;
+  
+  padding-top:50px;
+  padding-left:250px;
+  /* padding-right: 30px; */
+  padding-bottom: 40px;
+
+ }
+ header a {
+  color:#96a485;
+  margin-left:35px;
+  
+ }
+ header a:hover{
+  color:white;
+ }
+.news1{
+  width: 250px;
+  margin-left: 300px;
+  line-height: 28px;
+  color: rgb(75, 74, 73);
+  border-right:3px dotted rgb(184, 178, 178) ;
+  padding-right: 50px;
+}
+#para4{
+  border-top: 3px dotted rgb(175, 173, 173);
+}
+.news{
+  display: flex;
+}
+.news2{
+  padding-left: 20px;
+  color: #73786f;
+  
+}
+.image1{
+  display: flex;
+  border: 4px solid white;
+  width: 600px;
+  height: 250px;
+  background-color: white;
+  color: rgb(98, 100, 100);
+  line-height: 25px;
+}
+.npara,.npara2{
+  padding-left: 20px;
+}
+#b1,#b2{
+  background-color: rgb(191, 185, 185);
+ margin-left:250px ;
+
+}
+.image2{
+  display: flex;
+  border: 4px solid white;
+  width: 600px;
+  height: 250px;
+  background-color: white;
+  color: rgb(98, 100, 100);
+  line-height: 25px;
+  margin-top: 20px;
+}
+.image3{
+  display: flex;
+  border: 4px solid white;
+  width: 600px;
+  height: 250px;
+  background-color: white;
+  color: rgb(98, 100, 100);
+  line-height: 25px;
+  margin-top: 20px;
+}
+#author{
+  text-align: end;
+
+}
+.footer{
+  display: flex;
+  background-color: #a9aca6;
+  color:#73786f;
+  font-size:small;
+}
+.f1{
+  width: 310px;
+  padding-left: 280px;
+  padding-right: 20px;
+  height: 200px;
+  line-height: 20px;
+}
+.f2,.f3{
+  border-left: dotted;
+  border-color:#b2b4b1 ;
+  width: 300px;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 20px;
+  
+}
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 40px;
+  padding-top: 20px;
+}
+body{
+  background-color: #c9cbc7;
+}
+#anchor{
+  text-decoration-color: #58614E;
+}
