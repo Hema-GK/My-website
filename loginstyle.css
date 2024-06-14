@@ -1,0 +1,152 @@
+*{
+   margin:0;
+  padding:0; 
+  box-sizing: border-box;
+}
+/* The :root pseudo-class represents the highest-level parent in the DOM (the document itself), and defining variables here makes them globally accessible throughout your CSS. */
+:root{
+  --main-color:#6400e4;
+  --box-shadow:0px 3px 5px 0px rgba(0,0,0,0.34);
+  --hover-shadow:0px 4px 4px 0px rgba(200, 26, 26, 0.561);
+  --nav-shadow:0px 0px 10px 0px rgba(0,0,0,0.100);
+  --light-black:#141c3a;
+}
+body{
+  font-family:"Nunito",sans-serif;
+}
+.container{
+  width:28%;
+   margin:100px auto /*(top bottom) */
+
+}
+/*nav*/
+nav{
+  height:100vh;
+  width:100%;
+  margin:auto;
+  box-shadow:var(--nav-shadow);
+  display:flex;
+  align-items:center;
+}
+.nav-container{
+  width:90%;
+  margin:auto;
+  display:flex;
+  align-items:center;
+}
+.logo{
+width:10%;
+
+
+}
+.links{
+  display :flex;
+ 
+  margin:0 2rem;
+}
+.links.link{
+  list-style:none;
+  margin: 0 1.2rem;
+  color:var(---light-black);
+}
+form{
+  display:flex;
+  flex-direction:column ;
+margin:30px 0;/*(30px from top amd bottom and 0px from left and right)*/
+} 
+form label{
+  margin:5px 0px;
+
+}
+form input[type="text"],input[type="password"]{
+  height:55px;
+  margin:5px,0;
+  border:0.5px solid #b8b8b85d;
+  border-radius:3px;
+  padding:0 15px;/*top and bottom and left and right*/
+  font-size:20px;
+  font-family:"Nunito", sans-serif;
+}
+form a{
+  margin:10px 0;
+  text-decoration: none;
+  color:var(--main-color);
+  font-weight:bold;
+}
+form button[type="submit"]{
+  height:50px;
+  background:var(--main-color);
+  font-size:20px;
+  font-family:"Nunito",sans-serif;
+  border:none;
+  border-radius:2px;
+  color:white;
+  box-shadow:var(--box-shadow);
+  cursor:pointer;
+}
+form button[text="submit"]:hover{
+  box-shadow:var(--hover-shadow);
+  transform:translate(-3px);
+}
+
+.footer h3{
+
+font-size:16px;
+opacity:0.9;
+
+
+}
+.footer.images 
+{
+  width:10%;
+  display:flex;
+height:10vh;
+align-items:center;
+justify-content:space-sround;
+margin-top :15px;
+border:1px solid black;
+
+
+}
+.footer.images img{
+  width:15%;
+  border:1px solid #0c0707;
+  padding:15px;/*from all the sides*/
+  border-radius:3px;
+  transition:0.3s ease;
+}
+.footer.images img:hover{
+  box-shadow:inset var(--box-shadow);
+  cursor:pointer;
+} 
+.footer a{
+  float:right;
+  color:var(--main-color);
+  margin:10px 0;
+}
+.images :hover{
+  color:#6400e4;
+  border:1px linear black;
+}
+form a{
+  float:left;
+}
+/* .navigate
+{
+  only provise src path file in unpaired tag not describe content
+} */
+/* .form.b{
+  background:#6400e4;
+  /* color:antiquewhite; 
+  height:8px;
+  width:10px;
+} */
+/* <audio loop controls src=""> <iframe src="" frameborder=""></iframe>*/
+/*<fieldset>
+<legend>abc</legend>
+<form action="">
+<label for="'">name:</label>
+<input type="" name="" id="">
+
+</form>
+</field>*/

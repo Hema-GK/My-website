@@ -1,0 +1,124 @@
+body{
+  background-color: #d4ba5d;
+}
+
+header{
+  background: #58614E;
+  
+  /* padding-top:50px;
+  padding-left:250px; */
+  /* padding-right: 30px; */
+  /* padding-bottom: 40px; */
+  height:200px;
+
+ }
+ img{
+  margin-right:10px;
+  margin-left:20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border:7px double white ;
+  
+ }
+header a{
+  color:aliceblue;
+  font-family:cursive;
+  font-style: italic;
+  font-weight:bolder;
+  font-size:40px;
+  text-decoration: none;
+  /* margin-left:500px; */
+  margin-bottom: 30px;
+  padding-bottom:50px;
+
+  /* align-items: center; */
+ 
+
+ }
+
+ #id1{
+  background-color: red;
+  color:aliceblue;
+  padding:20px;
+  width:170px;
+  border-radius:7px ;
+  margin-top:80px;
+ }
+ #id2{
+  background-color: green;
+  color:aliceblue;
+  padding:20px;
+  width:170px;
+  border-radius:7px ;
+  margin-top:100px;
+ }
+ #id1:hover{
+ background-color:rgb(112, 49, 49); ;
+ }
+ #id2:hover{
+  background-color: rgb(121, 197, 46);
+  border:none;
+ 
+ }
+ #id3{
+  background-color: rgb(93, 162, 199);
+  color:aliceblue;
+  padding:20px;
+  width:170px;
+  border-radius:7px ;
+  margin-top:80px;
+ }
+ #id4{
+  background-color: rgb(255, 0, 98);
+  color:aliceblue;
+  padding:20px;
+  width:170px;
+  border-radius:7px ;
+  margin-top:80px;
+ }
+ #id3:hover{
+  background-color: rgb(145, 174, 189);
+  }
+  #id4:hover{
+   background-color:rgb(236, 115, 159) ;
+  
+  }
+  #id5{
+    background-color: rgb(120, 29, 126);
+    color:aliceblue;
+    padding:20px;
+    width:170px;
+    border-radius:7px ;
+    margin-top:80px;
+  }
+  #id6{
+    background-color: rgb(255, 247, 0);
+    color:aliceblue;
+    padding:20px;
+    width:170px;
+    border-radius:7px ;
+    margin-top:80px;
+  }
+  #id5:hover{
+    background-color: rgb(148, 84, 196);
+    }
+    #id6:hover{
+     background-color:rgb(211, 221, 100) ;
+    
+    }
+    #id7{
+      background-color: rgb(20, 2, 83);
+  color:aliceblue;
+  padding:20px;
+  width:170px;
+  border-radius:7px ;
+  margin-top:80px;
+    }
+    #id7:hover{
+      background-color:#6764bb ;
+    }
+    .class1{
+      display:flex;
+      justify-content: space-around;
+      gap: 10rem;;
+    }

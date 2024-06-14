@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="js.css">
+</head>
+<body>
+    <header>
+      <a href="js.html" ><img src="https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/file-mathematical-operations-1-638-1611041488.jpg" alt="" width="150px" height="150px"></a>
+     <a href="js.html" style="margin-bottom:50px;">DR.ARITHMETIC</a>
+       
+    </header>
+    <div class="class1">
+      <div>
+      <button type="submit" onclick="signChecker()"  id="id1">Positive or Negative</button>
+      <br><br>
+      <button type="submit" onclick="even_odd()" id="id2">Even or Odd</button>
+    </div>
+    <div >
+      <button type="submit" onclick="add()"  id="id3">ADDITION</button>
+      <br><br>
+      <button type="submit" onclick="Sub()" id="id4">SUBTRACTION</button>
+    </div>
+    <div>
+      <button type="submit"  onclick="Multiplication()" id="id5">MULTIPLICATION</button>
+      <br><br>
+      <button type="submit" onclick="Division()" id="id6">DIVISION</button>
+    </div>
+    <div>
+      <button type="submit" id="id7" onclick="Factorial()">FACTORIAL</button>
+     
+    </div>
+    </div>
+    <script>
+     
+      function signChecker(){
+        document.getElementById("#id1");
+        let num=prompt("Enter the number to check whether it positive or negative");
+         if(num>=0){
+          alert(`Number ${num} is positive`);
+          console.log(`Number ${num} is positive`);
+          document.write(`Number ${num} is positive`);
+         }
+         else if(num<0){
+          alert(`Number ${num} is negative`);
+          console.log(`Number ${num} is negative`);
+          document.write(`Number ${num} is negative`);
+         }
+         else{
+          document.write("null");
+         }
+
+      }
+      function even_odd(){
+        document.getElementById("#id2");
+        let num= prompt("Enter the number to ckeck whether it is even or odd number");
+        if(num%2===0){
+          alert(`Number ${num} is even`);
+          document.write(`Number ${num} is even`);
+          console.log(`Number ${num} is even`);
+        }
+        else{
+          alert(`Number ${num} is odd`);
+          document.write(`Number ${num} is odd`);
+          console.log(`Number ${num} is odd`)
+        }
+      }
+      function add(){
+        document.getElementById("#id3");
+      //   let sum1=0;
+      //  var sum=[];
+      //  let num=prompt("Enter the number");
+      //  for(let i=0;i<num;i++){ 
+      //   sum[i]=num;
+      //  }
+      //  for(let i=0;i<num;i++){
+        
+      //   sum1+=sum[i];
+      //  }
+      //  alert(`Sum is: ${sum1}`)
+      //  document.write(`Sum is: ${sum1}`);
+      //  console.log(sum1);
+let num1=parseInt(prompt("Enter number1"));
+let num2=parseInt(prompt("Enter number2"));
+let sum=num1 + num2;
+alert(`Sum is: ${sum}`)
+      document.write(`Sum is: ${sum}`);
+        console.log(sum);
+
+      }
+
+      function Sub(){
+        document.getElementById("#id4");
+        let num1=parseInt(prompt("Enter number1"));
+let num2=parseInt(prompt("Enter number2"));
+let diff =num1 - num2;
+alert(`Difference is: ${diff}`)
+      document.write(`Difference is: ${diff}`);
+        console.log(diff);
+      }
+      function Multiplication(){
+        document.getElementById("#id5");
+        let Mul=1;
+       let num=prompt("Enter how many numbers do you want to multiply ")
+       for(i=0;i<num;i++)
+       { let num1=prompt("Enter the number");
+         Mul=Mul*num1;}
+       alert(Mul);
+       document.write(`Product is : ${Mul}`);
+       console.log(Mul);
+      }
+      function Division(){
+        document.getElementById("#id6");
+      //  let num=prompt("Enter how many numbers do you want to Divide ")
+      //  for(i=0;i<num;i++)
+       let num1=prompt("Enter the divisor");
+       let num2=prompt("Enter the dividend");
+       let res=num2/num1;
+       
+       alert(res);
+       document.write(`Remainder is : ${res}`);
+       console.log(res);
+      }
+      function Factorial(){
+        document.getElementById("#id7");
+        let mul=1;
+       let num=prompt("Enter the number ")
+       for( let i=1;i<=num;i++)
+       { mul=mul*i;
+
+       }
+       alert(mul);
+       document.write(`Factorial of ${num} is : ${mul}`);
+       console.log(mul);
+      }
+      // function arithmetic(){
+      //   let id=document.querySelectorAll("#id3,#id4,#id5,#id6");
+      //   if(id==="#id3"){
+      //     let sum=0;
+      //  let num=propmt("Enter how many numbers do you want to add ")
+      //  for(i=0;i<num;i++)
+      //  { sum+=num;
+
+      //  }
+      //  alert(sum);
+      //  document.write(`Sum is : ${sum}}`);
+      //  console.log(sum)
+      // }
+
+      // else if(id==="id4") {
+      //     let diff=0;
+      //  let num=propmt("Enter how many numbers do you want to subtract ")
+      //  for(i=0;i<num;i++)
+      //  { diff-=num;
+
+      //  }
+      //  alert(diff);
+      //  document.write(`Difference is : ${diff}}`);
+      //  console.log(diff);
+      //   }
+      //   else if(id==="#id5"){
+      //     let mul=1;
+      //  let num=propmt("Enter the number ")
+      //  for(i=0;i<num;i++)
+      //  { mul=mul*i;
+
+      //  }
+      //  alert(mul);
+      //  document.write(`Factorial of ${num} is : ${mul}}`);
+      //  console.log(mul);
+      //   }
+      //   else if(id==="#id7"){
+      //     let num=propmt("Enter how many numbers do you want to Divide ")
+      //  for(i=0;i<num;i++)
+      //  { let num1=prompt("Enter the divisor");
+      //  let num2=prompt("Enter the dividend");
+      //  let res=num1/num2;
+       
+
+      //  }
+      //  alert(res);
+      //  document.write(`Remainder is : ${res}}`);
+      //  console.log(res);
+      //   }
+
+      // }
+      
+      </script>
+    
+  
+    
+</body>
+  
+</body>
+</html>
+
+ 
