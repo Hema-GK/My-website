@@ -1,0 +1,13 @@
+.image{
+  width: 300px;
+  height: 300px;
+  margin-left: 20px;
+  margin-top: 20px;
+  
+}
+.image:hover{
+  transform: scale(0.6);
+  border-radius: 20px;
+  
+  
+}
