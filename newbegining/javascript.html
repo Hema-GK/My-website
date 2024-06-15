@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // reinitialization, re declaration is possible
+    // var a=10;
+    // a=20;
+    // a="code";
+    // var a=60;
+    // console.log(a);
+    // let check_number=Number(prompt("Enter the number to check even or odd"));
+    // if(check_number>=0 && check_number%2===0)
+    // {
+    //   console.log("Positive")
+    //   console.log("Even")
+    // }
+    // else if(check_number<=0 && check_number%2!=0)
+    // {
+    //   console.log("Negative")
+    //   console.log("Odd")
+    // }
+// General function, no need to declare parameters with data type
+// function function_name(x,y){
+// return x+y
+// }
+// console.log(function_name)
+// anonymous function, store the function inside the variable
+// let sub=function (x,y){
+// return x-y
+// }
+// let res=sub(x,y)
+// console.log(res)
+// Arrow function,
+// let arrow=()=>{
+//   return (x*y)}
+//   console.log(arrow(x,y))
+  // call back function
+  // self-invoking function, without instructions it should perform the task
+
+  // (function(){
+  //   console.log("hello")
+  // }())
+// hoisting default behaviour of js
+// h=20
+// console.log(h)
+// var h; move declaration to top, it is not possible with let and const , it is called variable hoisting
+// function hoisting, only posiible with general function, it will move to top automatically by default
+// console.log(funhois(5,7))
+// function funhois(x,y){
+//   return x*y
+// }
+// object creation
+// literal or object name{
+// key:value
+// }
+let obj={
+  name:"code" ,
+  batch:"pes",
+  salary:2000,
+  myname:function(){
+console.log("My name is"+this.name)
+  }
+
+}
+// this refers to same object
+console.log(obj.myname())
+console.log(obj.name)
+console.log(obj.batch)
+console.log(obj.salary)
+console.log(obj.name)
+  </script>
+</body>
+</html>

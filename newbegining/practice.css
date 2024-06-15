@@ -1,0 +1,123 @@
+header{
+  background: #58614E;
+  
+  padding-top:50px;
+  padding-left:250px;
+  /* padding-right: 30px; */
+  padding-bottom: 40px;
+
+ }
+ header a {
+  color:#96a485;
+  margin-left:35px;
+  
+ }
+ header a:hover{
+  color:white;}
+  /* button{
+    background-color: #58614E;
+    color:white;
+    padding:20px;
+    width:200px;
+  }*/
+  /* #image1{
+    ba
+  }  */
+    .container{
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    body{
+      background-color: #E2E2E2;
+    }
+    #image1{
+       border:3px solid white;
+       padding:3px;
+       
+    }
+    #image2{
+      border:3px solid white;
+      padding:3px;
+    }
+    #image3{
+      border:3px solid white;
+      padding:3px;
+    }
+    .border{
+      border-left:1px dotted #aaa9a9;
+      margin-right: 40px;
+    }
+    .container3 li{
+      margin-right: 20px;
+      border-bottom:1px dotted #aaa9a9; 
+      padding-bottom: 30px;
+      padding-top: 10px;
+      color:#9e9132;
+
+    }
+    .container3 h2{
+      color:#58614E;
+      font-weight: lighter;
+    }
+    .container3 p{
+      font-size: 15px;
+      color:#58614E;
+      line-height: 20px;
+      margin-top: 0px;
+    }
+    .container3{
+      margin-top: 2px;
+    }
+    .border li{
+      color:#58614E;
+    }
+    .border h1{
+      font-weight: lighter;
+    }
+    .container2{
+      display:flex;
+      background:#E2E2E2;
+      color:#626262;
+      font-size: small;
+      justify-content: center;
+    }
+     .c1{
+    border-right:1px  #817e7e8a dotted;
+    width:300px;
+    align-items: center;
+    height:150px;
+    padding:50px;
+    margin-left: 45px;
+    } 
+    .c2{
+      border-left:1px #cccbcb35 dotted;
+      width:300px; 
+      height: 150px;
+      padding:50px;
+    }
+    
+    .c3{
+      border-left:1px #817e7e8a dotted;
+      height:150px;
+      padding:50px;
+      font-size:15px;
+    }
+    .c2 p{
+        line-height: 25px;
+      
+    }
+    .c1 p{
+      line-height: 25px;
+    }
+    .c3 button{
+      background:#414141;
+      color:aliceblue;
+      margin-left:48px;
+      padding:15px;
+      width:80%;
+      border-radius: 5px;
+    }
+    .c3 button:hover{
+      background: #131212;
+    }
